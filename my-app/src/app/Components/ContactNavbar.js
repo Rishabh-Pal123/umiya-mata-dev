@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const ContactNavbar = () => {
   return (
-    <div className='w-full h-full flex items-center justify-between bg-[#bc2e30] p-6'>
+    <div className='w-full h-full flex items-center justify-between bg-[#bc2e30] sm:p-6 p-2'>
         <div className='flex md:flex-row flex-col md:space-x-4 text-white'>
             <div className='font-bold flex items-center space-x-2'><span><FaPhoneAlt/></span> <a href={`tel:${phoneNumber}`}>{phoneNumber}</a></div>
             <div className='font-bold flex items-center space-x-2'><span><MdEmail/></span> <a href={`mailto:${email}`}>{email}</a></div>

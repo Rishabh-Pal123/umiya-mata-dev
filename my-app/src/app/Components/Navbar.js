@@ -7,7 +7,6 @@ import { primaryColor } from '../globalvar';
 import { MdOutlineMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 
-
 function Navbar() {
     const pathname = usePathname();
     const [menuOpen, setMenuOpen] = React.useState(false);
@@ -23,6 +22,10 @@ function Navbar() {
         { name: 'Contact Us', path: '/contact' },
     ];
 
+    React.useEffect(() => {
+        setMenuOpen(false);
+    },[pathname])
+
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     }
@@ -33,12 +36,12 @@ function Navbar() {
     const classActiveMobile = `flex w-full cursor-pointer items-center p-4 text-white space-x-4 bg-[#bc2e30]`;
     const classUnActiveMobile = `flex w-full items-center cursor-pointer space-x-4 text-black transition-all duration-300 hover:text-white p-4 hover:bg-[#bc2e30]`;
     return (
-        <nav className='flex items-center bg-white shadow-md justify-between p-4 sticky top-0 left-0'>
+        <nav className='flex items-center bg-gray-100 justify-between sm:p-4 p-2 sticky top-0 left-0'>
             <div>
-                <Image src={"/logo.png"} height={40} width={40}></Image>
+                <Image src={"/logo.png"} height={80} width={80}></Image>
             </div>
             <div>
-                <ul className='md:flex hidden items-center space-x-8 justify-center w-full'>
+                <ul className='lg:flex hidden items-center space-x-8 justify-center w-full'>
                     {
                         menuItems.map((item, idx) => {
                             return <Link key={idx} href={item.path}><li className={item.path === pathname ? classActive : classUnActive}>{item.name}</li></Link>
@@ -46,7 +49,7 @@ function Navbar() {
                     }
                 </ul>
 
-                <div onClick={toggleMenu} className='p-1 md:hidden block text-xl rounded-lg border-2 border-[#bc2e30] cursor-pointer hover:bg-[#bc2e30] hover:text-white text-[#bc2e30]'>
+                <div onClick={toggleMenu} className='p-1 lg:hidden block text-xl rounded-lg border-2 border-[#bc2e30] cursor-pointer hover:bg-[#bc2e30] hover:text-white text-[#bc2e30]'>
                     {!menuOpen ? <MdOutlineMenu fontSize={32}></MdOutlineMenu> : <IoMdClose fontSize={32}></IoMdClose>}
                 </div>
 
