@@ -2,8 +2,8 @@ import * as React from 'react';
 
 const Page = () => {
   return (
-    <div>
-        About Us Content will come here
+    <div className='min-h-[90vh]'>
+        
     </div>
   )
 }
