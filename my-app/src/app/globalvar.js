@@ -1,7 +1,0 @@
-export const primaryColor = "#bc2e30"
-export const phoneNumber = "0432313214"
-export const email = "info@sutm.org.au"
-export const location = "Melbourne, Australia"
-export const facebook = "https://www.facebook.com/"
-export const twitter = "https://www.twitter.com/"
-export const instagram = "https://www.instagram.com/"
