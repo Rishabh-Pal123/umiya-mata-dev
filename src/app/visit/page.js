@@ -43,7 +43,7 @@ const Page = () => {
           <li>It is customary to remove shoes and any other footwear before entering the temple premises. Most temples provide a designated area for storing shoes.</li>
           <li>Temples are places of worship and reflection. Maintain a respectful demeanor by speaking softly, refraining from loud conversations, and not using mobile phones or other electronic devices.</li>
           <li>Participate respectfully in rituals, such as offering prayers, lighting lamps, or receiving blessings. Follow the instructions given by the temple staff or signs and avoid touching idols or sacred objects unless permitted.</li>
-          <li>If you wish to make offerings or donations, do so respectfully and according to the temple's customs. It is common to offer flowers, fruits, or money. Make sure your offerings are clean and appropriate.</li>
+          <li>If you wish to make offerings or donations, do so respectfully and according to the temple&apos;s customs. It is common to offer flowers, fruits, or money. Make sure your offerings are clean and appropriate.</li>
         </ul>
       </div>
 
