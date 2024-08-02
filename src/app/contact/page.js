@@ -128,8 +128,8 @@ const Page = () => {
     return (
         <div className='min-h-[90vh] space-y-4'>
             <PageBanner title={"Contact us"} />
-            <div className='p-2 bg-white md:px-16 md:py-8  flex justify-center w-full'>
-                <div className='lg:w-[60%] w-full bg-white md:p-4 rounded-lg mt-[-100px] md:mt-[-150px] '>
+            <div className='p-2 md:px-16 md:py-8  flex justify-center w-full'>
+                <div className='lg:w-[60%] w-full md:p-4 rounded-lg mt-[-100px] md:mt-[-150px] '>
                     <div className='flex flex-col h-full md:flex-row justify-between rounded-lg w-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] bg-white'>
                         <div className='h-full md:border-r border-b md:w-[30%] w-full '>
                             <div className='grid gap-2 h-full md:grid-cols-1 grid-cols-2 md:p-4 p-2'>
@@ -234,11 +234,11 @@ const Page = () => {
             <div className='md:p-4 p-2'>
                 <div className='md:w-[70%] w-full mx-auto p-4  shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded-lg'>
                     <h1 className='text-[#bc2e30] text-xl font-bold'> Frequently Asked Questions </h1>
-                    <Accordion type="single" collapsible>
+                    <Accordion collapsible>
                         {
                             faqs.map((faq,idx) => {
                                 return (
-                                    <AccordionItem key={idx} value={idx}>
+                                    <AccordionItem key={idx + 1} value={idx + 1}>
                                         <AccordionTrigger>{faq.ques}</AccordionTrigger>
                                         <AccordionContent>
                                             {faq.ans}
