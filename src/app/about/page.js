@@ -50,7 +50,7 @@ const Page = () => {
                 <h3 className="md:text-2xl text-xl font-semibold mb-4 text-[#bc2e30]">Vision</h3>
                 <p className="text-gray-700 text-justify">
                   Our vision is to be a global leader in technology, driving a future where innovation and inclusivity go hand in hand. We envision a world where technology seamlessly integrates into every aspect of life, enhancing human potential and fostering a more connected, equitable society. Our goal is to create a digital ecosystem that empowers individuals and businesses to thrive, regardless of their circumstances.
-                  We aspire to set new standards in the industry by continuously pushing the boundaries of what technology can achieve. Our vision includes a commitment to sustainable practices and a focus on developing solutions that not only solve today's problems but also anticipate tomorrow's needs. By embracing diversity, fostering creativity, and promoting ethical innovation, we aim to inspire a new generation of thinkers, makers, and leaders who will shape the future.
+                  We aspire to set new standards in the industry by continuously pushing the boundaries of what technology can achieve. Our vision includes a commitment to sustainable practices and a focus on developing solutions that not only solve today&apos;s problems but also anticipate tomorrow&apos;s needs. By embracing diversity, fostering creativity, and promoting ethical innovation, we aim to inspire a new generation of thinkers, makers, and leaders who will shape the future.
                 </p>
               </div>
             </div>
