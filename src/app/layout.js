@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-white w-full h-full">
+      <body className="bg-white w-full h-full bg-center" style={{ backgroundImage: 'url(/images/background.webp)' }}>
         <ContactNavbar/>
         <Navbar/>
         {children}
