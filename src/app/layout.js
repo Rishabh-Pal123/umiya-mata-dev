@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./Components/Navbar";
 import { ContactNavbar } from "./Components/ContactNavbar"; 
 import { Footer } from "./Components/Footer";
+import 'leaflet/dist/leaflet.css'; // Import Leaflet styles
 
 const inter = Inter({ subsets: ["latin"] });
 
